@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>m_dialog</class>
+ <widget class="QDialog" name="m_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1341</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1341</width>
+    <height>751</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1341</width>
+    <height>751</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>931</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(247, 247, 238);
+font: 36pt &quot;배달의민족 도현&quot;;</string>
+   </property>
+   <property name="text">
+    <string>서머너즈워 길/점령전 방덱 깨기</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="a_input">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>520</y>
+     <width>421</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>61</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>61</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;배달의민족 도현&quot;;</string>
+   </property>
+   <property name="text">
+    <string>공덱 입력</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="a_search">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>620</y>
+     <width>421</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>61</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>61</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;배달의민족 도현&quot;;</string>
+   </property>
+   <property name="text">
+    <string>공덱 찾기</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1341</width>
+     <height>751</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1341</width>
+     <height>751</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1341</width>
+     <height>751</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/KakaoTalk_20200920_123437693.png);</string>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>label</zorder>
+  <zorder>a_input</zorder>
+  <zorder>a_search</zorder>
+ </widget>
+ <resources>
+  <include location="main_background.qrc"/>
+ </resources>
+ <connections/>
+</ui>
