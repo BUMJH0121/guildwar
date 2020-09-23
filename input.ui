@@ -238,6 +238,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    <property name="editable">
     <bool>false</bool>
    </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
    </property>
@@ -277,6 +280,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    <property name="editable">
     <bool>true</bool>
    </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
    </property>
@@ -292,6 +298,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    </property>
    <property name="editable">
     <bool>true</bool>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
    </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
@@ -309,6 +318,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    <property name="editable">
     <bool>true</bool>
    </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
    </property>
@@ -324,6 +336,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    </property>
    <property name="editable">
     <bool>true</bool>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
    </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
@@ -341,6 +356,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    <property name="editable">
     <bool>true</bool>
    </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>
    </property>
@@ -356,6 +374,9 @@ font: 36pt &quot;배달의민족 도현&quot;;</string>
    </property>
    <property name="editable">
     <bool>true</bool>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
    </property>
    <property name="duplicatesEnabled">
     <bool>true</bool>

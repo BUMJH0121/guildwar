@@ -10,6 +10,10 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+monster = open('monster_list.txt', 'r', encoding = 'utf-8')
+monster_list = monster.readlines()
+monster.close()
+
 
 class Ui_s_dialog(object):
     def setupUi(self, s_dialog):
@@ -26,8 +30,10 @@ class Ui_s_dialog(object):
         self.D_LEADER = QtWidgets.QComboBox(s_dialog)
         self.D_LEADER.setGeometry(QtCore.QRect(180, 80, 241, 51))
         self.D_LEADER.setEditable(True)
+        self.D_LEADER.setInsertPolicy(QtWidgets.QComboBox.NoInsert)
         self.D_LEADER.setDuplicatesEnabled(True)
         self.D_LEADER.setObjectName("D_LEADER")
+        self.D_LEADER.addItems(monster_list)
         self.label = QtWidgets.QLabel(s_dialog)
         self.label.setGeometry(QtCore.QRect(30, 80, 151, 51))
         self.label.setStyleSheet("font: 20pt \"배달의민족 도현\";\n"
@@ -43,8 +49,10 @@ class Ui_s_dialog(object):
         self.D_SECOND = QtWidgets.QComboBox(s_dialog)
         self.D_SECOND.setGeometry(QtCore.QRect(610, 80, 241, 51))
         self.D_SECOND.setEditable(True)
+        self.D_SECOND.setInsertPolicy(QtWidgets.QComboBox.NoInsert)
         self.D_SECOND.setDuplicatesEnabled(True)
         self.D_SECOND.setObjectName("D_SECOND")
+        self.D_SECOND.addItems(monster_list)
         self.label_3 = QtWidgets.QLabel(s_dialog)
         self.label_3.setGeometry(QtCore.QRect(920, 80, 151, 51))
         self.label_3.setStyleSheet("font: 20pt \"배달의민족 도현\";\n"
@@ -54,13 +62,16 @@ class Ui_s_dialog(object):
         self.D_THIRD = QtWidgets.QComboBox(s_dialog)
         self.D_THIRD.setGeometry(QtCore.QRect(1070, 80, 241, 51))
         self.D_THIRD.setEditable(True)
+        self.D_THIRD.setInsertPolicy(QtWidgets.QComboBox.NoInsert)
         self.D_THIRD.setDuplicatesEnabled(True)
         self.D_THIRD.setObjectName("D_THIRD")
+        self.D_THIRD.addItems(monster_list)
         self.SEARCH = QtWidgets.QPushButton(s_dialog)
         self.SEARCH.setGeometry(QtCore.QRect(570, 160, 311, 41))
         self.SEARCH.setObjectName("SEARCH")
         self.DISPLAY = QtWidgets.QTextBrowser(s_dialog)
         self.DISPLAY.setGeometry(QtCore.QRect(50, 220, 1251, 451))
+        self.DISPLAY.setStyleSheet("")
         self.DISPLAY.setObjectName("DISPLAY")
         self.RETURN = QtWidgets.QPushButton(s_dialog)
         self.RETURN.setGeometry(QtCore.QRect(1140, 690, 161, 51))
@@ -76,6 +87,11 @@ class Ui_s_dialog(object):
         self.label_2.setText(_translate("s_dialog", "SECOND : "))
         self.label_3.setText(_translate("s_dialog", "THIRD : "))
         self.SEARCH.setText(_translate("s_dialog", "검색"))
+        self.DISPLAY.setHtml(_translate("s_dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Gulim\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:28pt;\">    리더           2번째          3번째       승률        메모</span></p></body></html>"))
         self.RETURN.setText(_translate("s_dialog", "돌아가기"))
 import main_background_rc
 

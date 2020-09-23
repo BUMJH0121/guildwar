@@ -35,23 +35,32 @@ class I_Dialog(QDialog, input.Ui_i_dialog):
         super(QDialog, self).__init__()
         self.setupUi(self)
         self.RETURN.clicked.connect(self.re)
+        self.PUSH.clicked.connect(self.push)
 
     def re(self):
         self.main = M_Dialog()
         self.main.show()
         self.close()
 
+    def push(self):
+        defense = [self.D_LEADER.currentText(), self.D_SECOND.currentText(), self.D_THIRD.currentText()]
+        attack = [self.A_LEADER.currentText(), self.A_SECOND.currentText(), self.A_THIRD.currentText()]
+        wod = self.WOD.currentText()
 
 class S_Dialog(QDialog, search.Ui_s_dialog):
     def __init__(self):
         super(QDialog, self).__init__()
         self.setupUi(self)
         self.RETURN.clicked.connect(self.re)
+        self.SEARCH.clicked.connect(self.search)
 
     def re(self):
         self.main = M_Dialog()
         self.main.show()
         self.close()
+
+    def search(self):
+        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
