@@ -1,0 +1,8 @@
+한 일
+input ui에서 방덱 몬스터 입력하고 공덱 몬스터 입력하고 승/패를 선택하고 등록을 누르면
+코드상에서 변수에 담기
+combobox에 data를 txt 파일을 불러와서 저장 ->addItems이용
+
+내일 할 일
+combobox에 몬스터 명 입력하면 list중 똑같은 거 찾아서 그걸로 바뀌게
+database 만들기 (mysql사용예정)

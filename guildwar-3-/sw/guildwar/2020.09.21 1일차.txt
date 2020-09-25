@@ -1,0 +1,11 @@
+한 일
+main, 공덱 입력할 곳, 공덱 검색할 곳 qt designer를 통해 ui 만듬
+-서머너즈워에서 배경 캡쳐 후 리소스 파일로 만들어 background image 만듬
+-기본 ui를 이용(수정가능)
+
+main.ui main.py로 변환후 guildwar.py에 import
+
+내일 할 일
+main에 있는 공덱 입력 버튼 누르면 input ui로 넘어가게 버튼 연결
+공덱 검색 버튼 누르면 search ui로 넘어가게 버튼 연결
+시간 남으면 combo box 사용법 찾기

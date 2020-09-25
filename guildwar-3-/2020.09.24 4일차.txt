@@ -1,0 +1,10 @@
+한 일
+combobox에 몬스터 명 입력하면 list중 똑같은 거 찾아서 그걸로 바뀌게
+database 만들기 (mysql사용예정)
+python에서 pymysql을 이용해 database에 접속
+mysql workbench를 이용해 database 구축
+
+내일 할 일
+mysql 구문 공부
+python으로 mysql database와 연동
+시간 남으면 web server와 database연동 가능한지 확인
